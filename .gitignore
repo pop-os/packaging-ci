@@ -1,0 +1,4 @@
+example/*
+!example/config.toml
+.cargo/
+target/

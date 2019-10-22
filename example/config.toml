@@ -1,0 +1,20 @@
+email = "michael@system76.com"
+fullname = "Michael Aaron Murphy"
+
+context = "pop-os/staging"
+description = "Pop!_OS Staging"
+
+# The amount of repositories to build simultaneously at a time.
+concurrent_builds = 2
+
+[archs]
+amd64 = true
+i386 = false
+
+[series]
+bionic = { release = "18.04", wildcard = true }
+disco  = { release = "19.04", wildcard = true }
+eoan   = { release = "19.10", wildcard = true }
+
+[github]
+organizations = [ { name = "pop-os", starts_filter = "packaging-" }]
